@@ -1,10 +1,10 @@
 <template>
   <div>
-     <HeaderPage />
-     <MainPage />
-     <FooterPage />
+    <HeaderPage />
+    <MainPage />
+    <FooterPage />
   </div>
- </template>
+</template>
 
 <script>
 import HeaderPage from '@/components/HeaderPage.vue';
