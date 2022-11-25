@@ -1,28 +1,49 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+     <HeaderPage />
+     <MainPage />
+     <FooterPage />
   </div>
-</template>
+ </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import HeaderPage from '@/components/HeaderPage.vue';
+import MainPage from '@/components/MainPage.vue';
+import FooterPage from '@/components/FooterPage.vue';
 
 export default {
-  name: 'App',
+
   components: {
-    HelloWorld,
+    HeaderPage,
+    MainPage,
+    FooterPage,
   },
 };
+
 </script>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+ <style lang="scss">
+   @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+   html{
+     font-family: 'Roboto', sans-serif;
+
+   }
+
+   body{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     background-color: black;
+   }
+
+   a{
+     text-decoration: none;
+     color: black;
+   }
+
+   a:hover{
+     color:  #0091ff;
+   }
+
+ </style>
